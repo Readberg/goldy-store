@@ -1,9 +1,3 @@
-.sale {
-    display: flex;
-    flex-direction: column;
-    gap: 120px;
-}
-
 .sale-up {
     display: flex;
     flex-direction: column;

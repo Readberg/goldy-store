@@ -1,8 +1,4 @@
-.categories {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+
 .cat-items {
     display: flex;
     gap: 20px;
