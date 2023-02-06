@@ -32,8 +32,52 @@
 }
 
 .sale-item {
+    position: relative;
     width: 310px;
     height: 370px;
-    background-color: var(--bg-color);
+    background-color: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    padding: 16px 24px 26px;
 }
-
+.tag {
+    position: absolute;
+    padding: 4px 11px;
+    left: 24px;
+    background: #5B8A8F;
+    border-radius: 15px;
+    color: #FFFFFF;
+}
+.actions {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+.heart {
+    width: 20px;
+    height: 18px;
+    background-image: url(../assets/image/svg/heart.svg);
+}
+.watch {
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/image/svg/watch.svg);
+}
+.sale-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    line-height: 160%;
+}
+.sale-price {
+    font-weight: 600;
+    font-size: 18px;
+}
+.sale-img {
+    margin-top: 50px
+}
