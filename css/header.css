@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.head,
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+.head {
+    padding-top: 24px;
+    align-items: center;
+}
+
+/* Contacts */
+.contacts,
+.location,
+.phone {
+    display: flex;
+}
+.contacts {
+    gap: 60px;
+    height: 16px;
+}
+.location {
+    gap: 8px;
+    transition: .5s;
+}
+.location:hover,
+.phone:hover,
+.login:hover,
+.register:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.city::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 6px;
+    margin-left: 8px;
+    transition: .3s ease;
+    background-image: url(../assets/image/svg/arrow-down.svg);
+}
+.phone {
+    gap: 10px;
+    transition: .5s;
+}
+
+/* Logo */
+.logo img {
+    width: 100%;
+}
+.logo p {
+    color: #909090;
+    font-weight: 300;
+    letter-spacing: 0.27em;
+}
+
+/* Right */
+.right {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+.authorization {
+    display: flex;
+    height: 14px;
+    justify-content: space-between;
+    gap: 10px;
+}
+.login,
+.register {
+    transition: .5s;
+}
+.authorization span {
+    width: 1px;
+    background-color: var(--text-color);
+}
+.actions {
+    display: flex;
+    gap: 28px;
+}
+.actions button {
+    width: 32px;
+    height: 32px;
+    transition: .5s;
+}
+.actions button:hover {
+    background-color: #F8F8F8;
+}
+
+/* Navigation */
+.nav {
+    background-color: var(--bg-color);
+}
+.nav-list {
+    display: flex;
+    gap: 60px;
+    padding: 25px 110px 25px 50px;
+    border-right: 1px solid #F0F0F0;
+}
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 13px;
+    transition: opacity .5s;
+}
+.nav-link:hover {
+    opacity: 0.5;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.search img {
+    height: 16px;
+}
+.search-place {
+    border: none;
+    background-color: var(--bg-color);
+    outline: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}

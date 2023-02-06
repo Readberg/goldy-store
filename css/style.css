@@ -1,0 +1,19 @@
+@import url(reset.css);
+@import url(header.css);
+
+:root {
+    --text-color: #303030;
+    --bg-color: #F8F8F8;
+}
+
+.body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.wrapper {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
