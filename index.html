@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Goldy Store</title>
 </head>
+
 <body class="body wrapper">
     <header class="header">
         <div class="head">
@@ -63,11 +65,104 @@
         </nav>
     </header>
     <main class="main">
-        <section class="banner section"></section>
-        <section class="categories section"></section>
-        <section class="sale section"></section>
-        <section class="product section"></section>
-        <section class="articles section"></section>
+        <section class="banner section">
+            <div class="slider">
+                <div class="slider-body">
+                </div>
+                <div class="slider-prev"></div>
+                <div class="slider-next"></div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+        <section class="categories section">
+            <h2 class="section-title">Популярные категории</h2>
+            <div class="cat-items">
+                <div class="cat-item"></div>
+                <div class="cat-item"></div>
+                <div class="cat-item"></div>
+                <div class="cat-item"></div>
+                <div class="cat-item"></div>
+                <div class="cat-item"></div>
+            </div>
+        </section>
+        <section class="sale section">
+            <div class="sale-up">
+                <h2 class="section-title">Распродажа</h2>
+                <div class="sale-nav">
+                    <div class="sale-btns">
+                        <button class="sale-btn">Кольца</button>
+                        <button class="sale-btn">Серьги</button>
+                        <button class="sale-btn">Браслеты</button>
+                        <button class="sale-btn">Часы</button>
+                    </div>
+                    <div class="sale-location">
+                        <button class="sale-prev loc-item"></button>
+                        <button class="sale-next loc-item"></button>
+                    </div>
+                </div>
+                <div class="sale-items">
+                    <div class="sale-item"></div>
+                    <div class="sale-item"></div>
+                    <div class="sale-item"></div>
+                    <div class="sale-item"></div>
+                </div>
+            </div>
+            <div class="sale-down">
+                <img src="./assets/image/png/first-promo.png" alt="sale promo" class="sale-promo">
+                <img src="./assets/image/png/second-promo.png" alt="sale promo" class="sale-promo">
+                <img src="./assets/image/png/third-promo.png" alt="sale promo" class="sale-promo">
+            </div>
+        </section>
+        <section class="product section">
+            <div class="product-info">
+                <h2 class="section-title">Товар дня</h2>
+                <div class="sale-location">
+                    <button class="product-prev loc-item"></button>
+                    <button class="product-next loc-item"></button>
+                </div>
+            </div>
+            <div class="product-place"></div>
+        </section>
+        <section class="articles section">
+            <div class="articles-info">
+                <h2 class="section-title">Статьи</h2>
+                <div class="readmore">
+                    <p>Читать все</p>
+                    <img src="" alt="Read more icon">
+                </div>
+            </div>            
+            <div class="article-items">
+                <div class="article-item">
+                    <img src="./assets/image/png/article1.png" alt="article image" class="article-img">
+                    <div class="article-info">
+                        <p class="article-date">21 сентября 2021</p>
+                        <p class="article-text">Обручальные кольца: тренды 2021</p>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <img src="./assets/image/png/article2.png" alt="article image" class="article-img">
+                    <div class="article-info">
+                        <p class="article-date">25 сентября 2021</p>
+                        <p class="article-text">Главные ювелирные тренды года</p>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <img src="./assets/image/png/article3.png" alt="article image" class="article-img">
+                    <div class="article-info">
+                        <p class="article-date">21 сентября 2021</p>
+                        <p class="article-text">Жемчуг: 7 малоизвестных фактов о культовом украшении</p>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <img src="./assets/image/png/article4.png" alt="article image" class="article-img">
+                    <div class="article-info">
+                        <p class="article-date">21 сентября 2021</p>
+                        <p class="article-text">Как отличить золото от подделки: 10 практических советов</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>

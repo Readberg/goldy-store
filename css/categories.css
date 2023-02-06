@@ -1,0 +1,14 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.cat-items {
+    display: flex;
+    gap: 20px;
+}
+.cat-item {
+    width: 200px;
+    height: 260px;
+    background-color: var(--bg-color);
+}

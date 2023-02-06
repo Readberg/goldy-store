@@ -1,0 +1,45 @@
+.sale {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.sale-up {
+    display: flex;
+    flex-direction: column;
+}
+.sale-nav {
+    margin: 24px 0 36px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sale-btns,
+.sale-location {
+    display: flex;
+    gap: 8px;
+}
+.sale-btn {
+    height: 40px;
+    padding: 13px 30px;
+    background: var(--bg-color);
+    border-radius: 21px;
+}
+.loc-item {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #303030;
+    border-radius: 50%;
+}
+.sale-items,
+.sale-down {
+    display: flex;
+    gap: 20px;
+}
+
+.sale-item {
+    width: 310px;
+    height: 370px;
+    background-color: var(--bg-color);
+}
+

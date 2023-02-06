@@ -1,5 +1,11 @@
 @import url(reset.css);
 @import url(header.css);
+@import url(banner.css);
+@import url(categories.css);
+@import url(sale.css);
+@import url(product.css);
+@import url(articles.css);
+
 
 :root {
     --text-color: #303030;
@@ -10,10 +16,19 @@
     font-family: 'Inter', sans-serif;
     color: var(--text-color);
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .wrapper {
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10px 80px 10px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
 }
