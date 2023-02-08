@@ -79,16 +79,16 @@
     width: 1px;
     background-color: var(--text-color);
 }
-.actions {
+.actions-header {
     display: flex;
     gap: 28px;
 }
-.actions button {
+.actions-header button {
     width: 32px;
     height: 32px;
     transition: .5s;
 }
-.actions button:hover {
+.actions-header button:hover {
     background-color: #F8F8F8;
 }
 
