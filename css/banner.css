@@ -1,5 +1,58 @@
-.banner {
-    max-width: 100%;
+.slider {
+    position: relative;
     height: 560px;
     background-color: var(--bg-color);
+}
+.slider-body{
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+}
+.slider-item {
+    padding: 12px 36px 0 126px;
+}
+.slider-item {
+    display: flex;
+    gap: 99px;
+    justify-content: center;
+    align-items: center;
+}
+.slider-info {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+    align-items: flex-start;
+}
+.slider-info button {
+    width: 200px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #303030;
+}
+.slider-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.slider-text p {
+    font-family: 'Prata';
+    font-size: 20px;
+}
+
+.slider-next,
+.slider-prev{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+}
+.slider-next {
+    right: 24px;
+}
+.slider-prev {
+    left: 24px;
 }
