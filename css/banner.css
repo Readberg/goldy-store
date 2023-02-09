@@ -33,6 +33,10 @@
     text-transform: uppercase;
     color: #ffffff;
     background-color: #303030;
+    transition: opacity .5s ease;
+}
+.slider-info button:hover {
+    opacity: .8;
 }
 .slider-text {
     display: flex;
