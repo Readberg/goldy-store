@@ -2,20 +2,22 @@
     position: relative;
     height: 560px;
     background-color: var(--bg-color);
+    overflow: hidden;
 }
 .slider-body{
     display: flex;
-    max-width: 100%;
-    overflow: hidden;
+    max-width: 1164px;
+    transition: transform .5s ease;
 }
 .slider-item {
     padding: 12px 36px 0 126px;
 }
 .slider-item {
     display: flex;
-    gap: 99px;
+    gap: 100px;
     justify-content: center;
     align-items: center;
+    
 }
 .slider-info {
     display: flex;

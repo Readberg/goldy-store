@@ -55,4 +55,29 @@ h2 {
 .sale {
     gap: 120px;
 }
+.loc-item {
+    width: 54px;
+    height: 54px;
+    border: 1px solid #303030;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5 ease;
+}
 
+.dots {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    display: flex;
+    gap: 8px;
+}
+.dot {
+    border: 1px solid #303030;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+}
+.active-dot {
+    background: #303030;
+}

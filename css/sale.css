@@ -19,12 +19,6 @@
     background: var(--bg-color);
     border-radius: 21px;
 }
-.loc-item {
-    width: 54px;
-    height: 54px;
-    border: 1px solid #303030;
-    border-radius: 50%;
-}
 .sale-items,
 .sale-down {
     display: flex;
