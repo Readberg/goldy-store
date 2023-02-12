@@ -86,3 +86,6 @@ h2 {
     background: #303030;
     color: #ffffff;
 }
+.active-color {
+    border: 1px solid #303030;
+}

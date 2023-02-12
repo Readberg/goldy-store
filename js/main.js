@@ -6,7 +6,8 @@ const dot = document.querySelectorAll('.dot');
 const saleButtons = document.querySelectorAll('.sale-btn');
 const sale = document.querySelectorAll('.sale-item');
 const saleSection = document.querySelector('.sale');
-
+const sizes = document.querySelectorAll('.size');
+const colors = document.querySelectorAll('.border-color');
 let count = 0;
 
 function sliderNext() {
@@ -82,11 +83,22 @@ function activeBtn () {
             e.classList.add('active')
         })
     })
+    sizes.forEach(e => {
+        e.addEventListener('click', () => {
+            sizes.forEach(d => d.classList.remove('active'));
+            e.classList.add('active')
+        })
+    })
+    colors.forEach(e => {
+        e.addEventListener('click', () => {
+            colors.forEach(d => d.classList.remove('active-color'));
+            e.classList.add('active-color')
+        })
+    })
 }
 activeBtn();
 
 function activeSale () {
-
     sale.forEach(e => {
         e.addEventListener('mouseover', () => {
             e.lastElementChild.style.display = 'flex';
@@ -156,3 +168,4 @@ function activeHeart() {
     }) 
 } 
 activeHeart();
+

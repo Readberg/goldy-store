@@ -3,10 +3,15 @@
     justify-content: space-between;
     align-items: center;
 }
+#product-title{
+    font-size: 32px;
+    width: 100%;
+}
 .product-place {
     height: 550px;
     width: 100%;
     display: flex;
+    gap: 100px;
 }
 
 .mark {
@@ -16,15 +21,16 @@
 }
 .product-num {
     color: #8F8F8F;
-    margin: 20px 0 39px;
+    margin-top: 20px;
 }
 
 .product-price {
     display: flex;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #F0F0F0;
     gap: 36px;
+    height: 64px;
 }
 .price {
     display: flex;
@@ -59,7 +65,6 @@
     width: 224px;
     background: #F5F5F5;
     display: flex;
-    padding: 12px 14px;
     gap: 20px;
     justify-content: center;
     align-items: center;
@@ -133,6 +138,7 @@
     width: 50px;
     font-size: 14px;
     text-align: center;
+    transition: all .5s ease;
 }
 
 .product-buy {
@@ -166,8 +172,51 @@
 .buy-action {
     display: flex;
     gap: 8px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.buy-action:hover {
+    opacity: 1;
 }
 .buy-action img {
-    width: 20px;
+    width: 18px;
     height: 18px;
+}
+
+.product-image {
+    position: relative;
+}
+.tags {
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+.product-tag {
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    padding: 4px 10px;
+}
+.gray-tag {
+    background: #495159;
+}
+.yellow-tag {
+    background: #E1A661;
+}
+.green-tag {
+    background: #5B8A8F;
+}
+.arrow-product {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.arrow-left {
+    left: 16px;
+}
+.arrow-right {
+    right: 16px;
 }
