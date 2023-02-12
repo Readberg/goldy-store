@@ -56,12 +56,20 @@
 .heart {
     width: 20px;
     height: 18px;
-    background-image: url(../assets/image/svg/heart.svg);
+    background-image: url(../assets/image/png/heart.png);
+    transition: all .5s ease;
+}
+.heart:hover {
+    background-image: url(../assets/image/png/hearthover.png);
 }
 .watch {
     width: 20px;
     height: 20px;
-    background-image: url(../assets/image/svg/watch.svg);
+    background-image: url(../assets/image/png/watch.png);
+    transition: all .5s ease;
+}
+.watch:hover {
+    background-image: url(../assets/image/png/watchhover.png);
 }
 .sale-info {
     display: flex;
@@ -72,11 +80,28 @@
 .sale-price {
     font-weight: 600;
     font-size: 18px;
+    display: flex;
+    gap: 60px;
+}
+.sale-price div {
+    display: flex;
+    gap: 8px;
+}
+.sale-price .past-price {
+    text-decoration-line: line-through;
+    color: #8F8F8F;
+    font-size: 14px;
 }
 .sale-img {
-    margin-top: 50px
+    margin-top: 50px;
+    position: relative;
 }
-
+.sale-dots {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    right: 40%;
+}
 .sale-foot {
     display: none;
     flex-direction: column;
@@ -115,14 +140,12 @@
 	right: 15px;
 	transform: translateY(-50%);
 
-	/* Рисуем треугольник */
     width: 0;
     height: 0;
     border-width: 4px;
     border-color: #303030 transparent transparent transparent;
 	border-style: solid;
 
-	/* Снимаем клик с треугольника */
 	pointer-events: none;
 }
 

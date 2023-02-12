@@ -4,6 +4,8 @@ const slider = document.querySelector('.slider');
 const sliderBody = document.querySelector('.slider-body');
 const dot = document.querySelectorAll('.dot');
 const saleButtons = document.querySelectorAll('.sale-btn');
+const sale = document.querySelectorAll('.sale-item');
+const saleSection = document.querySelector('.sale');
 
 let count = 0;
 
@@ -83,8 +85,6 @@ function activeBtn () {
 }
 activeBtn();
 
-const sale = document.querySelectorAll('.sale-item');
-const saleSection = document.querySelector('.sale');
 function activeSale () {
 
     sale.forEach(e => {
@@ -139,3 +139,20 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 		}
 	});
 });
+
+const heart = document.querySelectorAll('.heart');
+function activeHeart() {
+    let count = 0;
+    heart.forEach(e => {
+        e.addEventListener('click', () => {
+            if(count === 0){
+                e.style.backgroundImage = 'url(../assets/image/png/heartpress.png)';
+                count += 1;
+            } else if (count === 1) {
+                e.style.backgroundImage = 'url(../assets/image/png/heart.png)';
+                count -= 1;
+            }
+        })
+    }) 
+} 
+activeHeart();
