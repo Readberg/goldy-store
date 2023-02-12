@@ -3,6 +3,7 @@ const btnNext = document.querySelector('.slider-next');
 const slider = document.querySelector('.slider');
 const sliderBody = document.querySelector('.slider-body');
 const dot = document.querySelectorAll('.dot');
+const saleButtons = document.querySelectorAll('.sale-btn');
 
 let count = 0;
 
@@ -53,25 +54,88 @@ slider.addEventListener('click', function () {
 function moveDots() {
     dot.forEach(e => {
         e.addEventListener('click', function () {
-            dot.forEach(d => d.classList.remove('active-dot'));
+            dot.forEach(d => d.classList.remove('active'));
             if (e.id == 'dot1') {
                 sliderBody.style.transform = 'translateX(0)';
                 count = 0;
-                e.classList.add('active-dot');
-
+                e.classList.add('active');
             } else if (e.id == 'dot2') {
                 sliderBody.style.transform = 'translateX(-100%)';
                 count = 1;
-                e.classList.add('active-dot');
-
+                e.classList.add('active');
             } else if (e.id == 'dot3') {
                 sliderBody.style.transform = 'translateX(-200%)';
                 count = 2;
-                e.classList.add('active-dot');
+                e.classList.add('active');
             }
         })
     })
 }
-
 moveDots();
 
+function activeBtn () {
+    saleButtons.forEach(e => {
+        e.addEventListener('click', () => {
+            saleButtons.forEach(d => d.classList.remove('active'));
+            e.classList.add('active')
+        })
+    })
+}
+activeBtn();
+
+const sale = document.querySelectorAll('.sale-item');
+const saleSection = document.querySelector('.sale');
+function activeSale () {
+
+    sale.forEach(e => {
+        e.addEventListener('mouseover', () => {
+            e.lastElementChild.style.display = 'flex';
+            e.style.boxShadow = '0px 16px 32px rgba(0, 0, 0, 0.1)';
+            e.style.height = '480px';
+            saleSection.style.gap = '10px';
+        })
+        e.addEventListener('mouseout', () => {
+            e.lastElementChild.style.display = 'none';
+            e.style.boxShadow = 'none';
+            e.style.height = '370px';
+            saleSection.style.gap = '120px';
+        })
+    })
+}
+activeSale();
+
+document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
+	const dropDownBtn = dropDownWrapper.querySelector('.dropdown__button');
+	const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
+	const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
+	const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
+
+	dropDownBtn.addEventListener('click', function (e) {
+		dropDownList.classList.toggle('dropdown__list--visible');
+        this.classList.add('dropdown__button--active');
+	});
+
+	dropDownListItems.forEach(function (listItem) {
+		listItem.addEventListener('click', function (e) {
+			e.stopPropagation();
+			dropDownBtn.innerText = this.innerText;
+			dropDownBtn.focus();
+			dropDownInput.value = this.dataset.value;
+			dropDownList.classList.remove('dropdown__list--visible');
+		});
+	});
+
+	document.addEventListener('click', function (e) {
+		if (e.target !== dropDownBtn) {
+			dropDownBtn.classList.remove('dropdown__button--active');
+			dropDownList.classList.remove('dropdown__list--visible');
+		}
+	});
+
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Tab' || e.key === 'Escape') {
+			dropDownBtn.classList.remove('dropdown__button--active');
+			dropDownList.classList.remove('dropdown__list--visible');
+		}
+	});
+});

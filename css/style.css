@@ -81,6 +81,8 @@ h2 {
     height: 8px;
     cursor: pointer;
 }
-.active-dot {
+.active,
+.active {
     background: #303030;
+    color: #ffffff;
 }
