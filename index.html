@@ -19,7 +19,18 @@
             <div class="contacts">
                 <div class="location">
                     <img src="./assets/image/svg/location.svg" alt="location icon">
-                    <p class="city">Санкт-Петербург</p>
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <button class="dropdown__button" id="town-button">Санкт-Петербург</button>
+                            <ul class="dropdown__list towns-list">
+                                <li class="dropdown__list-item town-item" data-value="saint-p">Белое золото</li>
+                                <li class="dropdown__list-item town-item" data-value="moscow">Москва</li>
+                                <li class="dropdown__list-item town-item" data-value="novgorod">Нижний Новгород</li>
+                                <li class="dropdown__list-item town-item" data-value="rostov">Ростов-на-Дону</li>
+                            </ul>
+                            <input type="text" name="select-category" value="" class="dropdown__input-hidden" >
+                        </div>
+                    </div>
                 </div>
                 <div class="phone">
                     <img src="./assets/image/svg/phone.svg" alt="phone icon">
@@ -39,6 +50,7 @@
                 <div class="actions-header">
                     <button>
                         <img src="./assets/image/svg/coolicon.svg" alt="likes icon">
+                        <div class="heart-count">23</div>
                     </button>
                     <button>
                         <img src="./assets/image/svg/stats.svg" alt="stats icon">
@@ -107,7 +119,7 @@
                     <img class="next-arrow" src="./assets/image/svg/next-arrow.svg" alt="next arrow icon">
                 </div>
                 <div class="dots">
-                    <div class="dot" id="dot1"></div>
+                    <div class="dot active" id="dot1"></div>
                     <div class="dot" id="dot2"></div>
                     <div class="dot" id="dot3"></div>
                 </div>
@@ -455,7 +467,7 @@
                             <div class="question"></div>
                         </div>
                         <div class="sizes">
-                            <button class="size">16,5</button>
+                            <button class="size active">16,5</button>
                             <button class="size">17,5</button>
                             <button class="size">18,5</button>
                             <button class="size">19</button>

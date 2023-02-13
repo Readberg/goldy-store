@@ -28,7 +28,6 @@
     gap: 8px;
     transition: .5s;
 }
-.location:hover,
 .phone:hover,
 .login:hover,
 .register:hover {
@@ -84,12 +83,28 @@
     gap: 28px;
 }
 .actions-header button {
+    position: relative;
     width: 32px;
     height: 32px;
     transition: .5s;
 }
 .actions-header button:hover {
     background-color: #F8F8F8;
+}
+.heart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #E46942;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 10px;    
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigation */
@@ -128,4 +143,16 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+}
+
+#town-button {
+	width: 175px;
+
+	background: #ffffff;
+	height: 14px;
+    padding: 2px 0;
+}
+
+#town-button::after {
+	top: 80%;
 }
